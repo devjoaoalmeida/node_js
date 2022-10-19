@@ -1,0 +1,29 @@
+POST http://localhost:4002/products 
+Content-Type: application/json
+
+{
+    "name":"Caderno 120 folhas",
+    "price": 20.00
+}
+
+###
+
+GET http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/products/
+
+###
+
+PUT http://localhost:4002/products/
+Content-Type: application/json
+
+{
+    "name": "Caderno 120 folhas",
+    "price": 18.00
+}
+
+###
+
+DELETE http://localhost:4002/products/8ecab4f4-c11a-4bd8-84d4-05cef3f0c002
