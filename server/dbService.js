@@ -1,8 +1,8 @@
 const mysql = require('mysql');
-const dotemv = require('dotenv');
+const dotenv = require('dotenv');
 let instance = null;
 
-dotemv.config();
+dotenv.config();
 
 const connection = mysql.createConnection({
     host: process.env.HOST,
@@ -74,6 +74,7 @@ class DbService {
             });
 
             return response === 1 ? true : false;
+            
         } catch (error) {
             console.log(error);
             return false

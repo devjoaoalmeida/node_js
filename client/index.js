@@ -19,7 +19,7 @@ function deleteRowById(id) {
     })
     .then(response => response.json())
     .then(data => {
-        if (data.success) {
+        if (data.success === false) {
             location.reload();
         }
     });
